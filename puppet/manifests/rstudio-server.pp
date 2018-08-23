@@ -26,7 +26,8 @@ class update_system {
     exec { 'add-cran-repository':
       provider => shell,
       command  =>
-'add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/";
+# 'add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/";
+'add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty-cran35/";
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9;
 apt-get update;',
     }
