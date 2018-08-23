@@ -1,7 +1,7 @@
 include wget
 
-$rstudioserver = 'rstudio-server-0.99.465-amd64.deb'
-$urlrstudio = 'http://download2.rstudio.org/'
+$rstudioserver = 'rstudio-server-1.1.456-amd64.deb' # 'rstudio-server-0.99.465-amd64.deb'
+$urlrstudio = 'https://download2.rstudio.org/'
 
 # $texpkgs = 'hyperref ifxetex ifluatex fixltx2e listings fancyvrb longtable booktabs ulem framed'
 

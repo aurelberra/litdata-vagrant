@@ -1,10 +1,7 @@
-options("repos"="http://cran.rstudio.com") # set the cran mirror
+options("repos"="https://cran.rstudio.com/") # set the cran mirror
 
 packages <- c("devtools",
-              "ggplot2",
-              "tidyr",
-              "dplyr",
-              "stringr",
+              "tidyverse", # instead of separate pkgs
               "rstudio",
               "knitr",
               "rmarkdown",
@@ -19,5 +16,5 @@ packages <- setdiff(packages, installed.packages()[, "Package"])
 if (length(packages) != 0){
   (install.packages(packages))
 }
-devtools::install_github("agoldst/litdata")
+devtools::install_github("agoldst/litdata") # original data from A. Goldstone
 update.packages(ask=FALSE)
